@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import {Item} from '../../models/item';
+import { ItemService } from '../../services/item.service';
 
 @Component({
   selector: 'app-items',
@@ -10,28 +11,11 @@ export class ItemsComponent  {
   items: Item [] = [];
   total: number = 0;
 
-   constructor(){
-    this.items =[
-      {
-        id:0,
-        title:'manzana',
-        price: 10.5,
-        quantity: 4,
-        completed: false
-      },{
-        id:1,
-        title:'pan',
-        price: 3.5,
-        quantity: 8,
-        completed: true
-      },{
-        id:2,
-        title:'campera',
-        price: 300,
-        quantity: 1,
-        completed: false
-      }
-     ];
+   constructor(private itemService:ItemService){
+
+    //this.items =[ ];
+     this.items =
+
      this.getTotal();
   }
  
