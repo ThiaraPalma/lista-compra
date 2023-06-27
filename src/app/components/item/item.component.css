@@ -3,7 +3,11 @@
     box-sizing: border-box;
 }
 .completed{
+    color: #ccc;
     text-decoration: line-through;
+}
+.completed.total{
+    color: #ccc;
 }
 div{
     padding: 5px 0;
@@ -24,7 +28,7 @@ padding: 0 5px;
 total{
     width: 15%;
     font-weight: bolder;
-    color: rgb(51, 0, 255);
+    color: rgb(0, 4, 255);
     padding: 0 5px;
 }
 actions{
