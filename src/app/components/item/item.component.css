@@ -2,15 +2,16 @@
     display: flex;
     box-sizing: border-box;
 }
-.completed{
-    color: #ccc;
-    text-decoration: line-through;
-}
-.completed.total{
-    color: #ccc;
+.row:hover{
+    border-radius: border-box;
+    background-color: #eee;
 }
 div{
     padding: 5px 0;
+}
+.completed{
+    color: #ddd;
+    text-decoration: line-through;
 }
 .title{
     display: flex;
@@ -21,19 +22,31 @@ div{
     width: 15%;
     padding: 0 5px;
 }
-quantity{
-width: 10%;
-padding: 0 5px;
+.quantity{
+ width: 10%;
+ padding: 0 5px;
 }
-total{
+.total{
     width: 15%;
     font-weight: bolder;
     color: rgb(0, 4, 255);
     padding: 0 5px;
 }
-actions{
+.actions{
     width: 10%;
     text-align: center;
     box-sizing: border-box;
     padding: 0 5px;
+}
+.actions button{
+    border: none;
+    font-size: 12px;
+    background-color: red;
+    color: white;
+    padding: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.actions button:hover{
+    background-color: darkred;
 }

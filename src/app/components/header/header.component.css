@@ -1,0 +1,17 @@
+ menu{
+    background-color: rgb(11, 177, 5);
+    padding: 0;
+    margin: 0;
+}
+menu ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+ menu ul li a{
+    display: block;
+    color: rgb(9, 47, 151);
+    text-decoration: none;
+    padding: 10 px 15 px;
+}
