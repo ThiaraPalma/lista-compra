@@ -1,14 +1,11 @@
 import { Injectable } from '@angular/core';
+import { Item } from '../models/item';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ItemService {
-
-  constructor() { }
-
-  getItems(){
-    return[
+  items:Item[] = [
       {
         id:0,
         title:'manzana',
@@ -29,5 +26,14 @@ export class ItemService {
         completed: false
       }
      ];
+
+  constructor() { }
+
+  getItems(){
+
+     return this.items;
+  }
+  addItem(item:Item){
+    this.items.unshift(item);
   }
 }

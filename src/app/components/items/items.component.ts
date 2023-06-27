@@ -14,7 +14,7 @@ export class ItemsComponent  {
    constructor(private itemService:ItemService){
 
     //this.items =[ ];
-     this.items =
+     this.items = this.itemService.getItems();
 
      this.getTotal();
   }
