@@ -3,6 +3,9 @@ form{
     width: 300px;
     display: block;
 }
+form h2{
+    padding: 10px 0;
+}
 form div{
     padding: 5px 0;
 }
